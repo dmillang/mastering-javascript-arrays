@@ -20,11 +20,17 @@
 // console.log(scores2);
 
 /* Reading and writing */
-// let arr9 = [1, 2, 3, 4, true, "array", { one: 1 }, [3, 4]];
+let arr9 = [1, 2, 3, 4, true, "array", { one: 1 }, [3, 4]];
+let arrElement = arr9[6];
+arr9[6] = "Max";
 
-// let arrElement = arr9[6];
-// arr9[6] = 'Max';
+/* Sparse Arrays */
+let arr10 = [1, 2, 3, 4, 5];
+arr10[20] = 19;
+arr10[14] = "fourteen";
 
-// arr9[20] = 19;
 
-console.log(arr9);
+
+
+
+console.log(arr10);
