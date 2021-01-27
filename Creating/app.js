@@ -10,6 +10,7 @@ let arr6 = new Array(1,2,3,4,5,true);
 
 /* method */
 let arr7 = Array.of(5);
+let arr8 = Array.of(5);
 
 
 console.log(arr7);
