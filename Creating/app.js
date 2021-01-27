@@ -13,8 +13,18 @@
 // let arr8 = Array.of(5,3,8,true);
 
 /* Array.fill() method */
-let scores = Array(10).fill(5);
-let scores2 = [1, 2, 3, 4, 5, , , , ,].fill("fillIt!", 5, 100);
+// let scores = Array(10).fill(5);
+// let scores2 = [1, 2, 3, 4, 5, , , , ,].fill("fillIt!", 5, 100);
 
-console.log(scores);
-console.log(scores2);
+// console.log(scores);
+// console.log(scores2);
+
+/* Reading and writing */
+// let arr9 = [1, 2, 3, 4, true, "array", { one: 1 }, [3, 4]];
+
+// let arrElement = arr9[6];
+// arr9[6] = 'Max';
+
+// arr9[20] = 19;
+
+console.log(arr9);
