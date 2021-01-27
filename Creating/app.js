@@ -29,8 +29,9 @@ let arr10 = [1, 2, 3, 4, 5];
 arr10[20] = 19;
 arr10[14] = "fourteen";
 
+/* Length */
+let arr11 = [1,2,3,4,5];
+arr11[arr11.length] = 6;
+arr11.length = 20;
 
-
-
-
-console.log(arr10);
+console.log(arr11);
