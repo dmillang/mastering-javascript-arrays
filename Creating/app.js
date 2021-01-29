@@ -34,9 +34,18 @@
 // arr11[arr11.length] = 6;
 // arr11.length = 20;
 
-let arr12 = [1,2,3,4,5,6,7];
+// let arr12 = [1,2,3,4,5,6,7];
+// delete arr12[5]; // doesn't adjust elements, array keeps being the same length
 
-delete arr12[5]; // doesn't adjust elements, array keeps being the same length
+let arr13 = [1,2,3,4,5,6,7,8];
+let length = arr13.push(9,10,20); // returns length
+console.log(length);
+let value = arr13.pop(); // returns value
+console.log(value);
+console.log(arr13);
 
-console.log(arr12);
+
+
+
+console.log(arr13);
 
