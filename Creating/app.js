@@ -37,15 +37,24 @@
 // let arr12 = [1,2,3,4,5,6,7];
 // delete arr12[5]; // doesn't adjust elements, array keeps being the same length
 
-let arr13 = [1,2,3,4,5,6,7,8];
-let length = arr13.push(9,10,20); // returns length
-console.log(length);
-let value = arr13.pop(); // returns value
-console.log(value);
-console.log(arr13);
+// let arr13 = [1,2,3,4,5,6,7,8];
+// let length = arr13.push(9,10,20); // returns length
+// console.log(length);
+// let value = arr13.pop(); // returns value
+// console.log(value);
+// console.log(arr13);
 
 
+let arr14 = [1,2,3,4,5,6,7,8];
+
+arr14.unshift(-2,-1,0);
+
+// add new elemet keep same array length
+console.log(arr14.length);
+arr14.push(9);
+arr14.shift();
+console.log(arr14.length);
 
 
-console.log(arr13);
+console.log(arr14);
 
