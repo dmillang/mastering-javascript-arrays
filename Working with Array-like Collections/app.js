@@ -83,4 +83,11 @@
 // console.log(sentence1);
 // console.log(sentence2);
 
+let str =
+  "Natural language has no dominant paradigm, and neither does JavaScript. Developers can select from a grab bag of approaches--procedural, functional, and object-oriented--and blend them as appropriate.";
 
+let spreadArr = [...str];
+let fromArr = Array.from(str);
+
+console.log(spreadArr);
+console.log(fromArr);
