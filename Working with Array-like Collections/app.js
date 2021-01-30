@@ -23,6 +23,24 @@ map.set(3,'three');
 
 let divs = document.querySelectorAll('div');
 
-for (let val of divs) {
-    console.log(val);
+// for (let val of divs) {
+//     console.log(val);
+// };
+
+var mapArray = [...map]; // spread operator
+var mapArray2 = Array.from(map); // static method
+console.log(mapArray);
+console.log(mapArray2);
+
+var mapDivs = [...divs];
+console.log(mapDivs);
+
+let obj2 = {
+    0: 'zero',
+    1: 'one',
+    2: 'two',
+    3: 'three',
+    length: 4
 };
+
+console.log(Array.from(obj2));
