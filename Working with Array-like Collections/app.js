@@ -45,39 +45,42 @@
 
 // console.log(Array.from(obj2));
 
-let string = "hello there";
-let stringArr = Array.from(string);
+// let string = "hello there";
+// let stringArr = Array.from(string);
 
-for (var i = 0; i < stringArr.length; i++) {
-  if (stringArr.indexOf(stringArr[i]) === 0) {
-    stringArr[i] = stringArr[i].toUpperCase();
-  } else if (stringArr[i] === " ") {
-    stringArr[i + 1] = stringArr[i + 1].toUpperCase();
-  }
-}
+// for (var i = 0; i < stringArr.length; i++) {
+//   if (stringArr.indexOf(stringArr[i]) === 0) {
+//     stringArr[i] = stringArr[i].toUpperCase();
+//   } else if (stringArr[i] === " ") {
+//     stringArr[i + 1] = stringArr[i + 1].toUpperCase();
+//   }
+// }
 
-const capitalizeWords = function (str) {
-    let string = str;
-    let stringArr = Array.from(string);
+// const capitalizeWords = function (str) {
+//     let string = str;
+//     let stringArr = Array.from(string);
 
-  for (var i = 0; i < stringArr.length; i++) {
-    if (stringArr.indexOf(stringArr[i]) === 0) {
-      stringArr[i] = stringArr[i].toUpperCase();
-    } else if (stringArr[i] === " ") {
-      stringArr[i + 1] = stringArr[i + 1].toUpperCase();
-    }
+//   for (var i = 0; i < stringArr.length; i++) {
+//     if (stringArr.indexOf(stringArr[i]) === 0) {
+//       stringArr[i] = stringArr[i].toUpperCase();
+//     } else if (stringArr[i] === " ") {
+//       stringArr[i + 1] = stringArr[i + 1].toUpperCase();
+//     } else {
+//       stringArr[i] = stringArr[i].toLowerCase();
+//     }
 
-    string = string.slice(1);
-    string += stringArr[i];
-  }
+//     string = string.slice(1);
+//     string += stringArr[i];
+//   }
 
-  return string;
+//   return string;
 
-};
+// };
 
-let test = capitalizeWords("new events coming");
+// let sentence1 = capitalizeWords("new events coming");
+// let sentence2 = capitalizeWords("about last week's results");
 
-console.log(test);
+// console.log(sentence1);
+// console.log(sentence2);
 
-console.log(stringArr);
-console.log(string);
+
