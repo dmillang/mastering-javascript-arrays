@@ -83,8 +83,7 @@
 // console.log(sentence1);
 // console.log(sentence2);
 
-let str =
-  "Natural language has no dominant paradigm, and neither does JavaScript. Developers can select from a grab bag of approaches--procedural, functional, and object-oriented--and blend them as appropriate.";
+let str = "Natural language has no dominant paradigm, and neither does JavaScript. Developers can select from a grab bag of approaches--procedural, functional, and object-oriented--and blend them as appropriate.";
 
 // let spreadArr = [...str];
 // let fromArr = Array.from(str);
@@ -102,15 +101,28 @@ let str =
 // }
 // console.log(strUpperG);
 
-let str3 = "";
+// let str3 = "";
+// for (i = 0; i < str.length; i++) {
+//     if (str[i] === str[i].toLowerCase()) {
+//         str3 += str[i].toUpperCase();
+//     } else {
+//         str3 += str[i];
+//     }
+// }
+// console.log(str3);
 
-for (i = 0; i < str.length; i++) {
-    if (str[i] === str[i].toLowerCase()) {
-        str3 += str[i].toUpperCase();
-    } else {
-        str3 += str[i];
-    }
+let wordArray = str.split(" ", 10);
+let comaArray = str.split(",");
+let hyphenArray = str.split("-");
+let regexArray = str.split(/[,.]|--/);
+let str2 = "";
+for (const char of regexArray) {
+    str2 += char;
 }
 
 console.log(str);
-console.log(str3);
+console.log(wordArray);
+console.log(comaArray);
+console.log(hyphenArray);
+console.log(regexArray);
+console.log(str2);
