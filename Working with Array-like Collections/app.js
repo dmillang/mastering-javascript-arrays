@@ -83,7 +83,7 @@
 // console.log(sentence1);
 // console.log(sentence2);
 
-let str = "Natural language has no dominant paradigm, and neither does JavaScript. Developers can select from a grab bag of approaches--procedural, functional, and object-oriented--and blend them as appropriate.";
+// let str = "Natural language has no dominant paradigm, and neither does JavaScript. Developers can select from a grab bag of approaches--procedural, functional, and object-oriented--and blend them as appropriate.";
 
 // let spreadArr = [...str];
 // let fromArr = Array.from(str);
@@ -145,18 +145,43 @@ let str = "Natural language has no dominant paradigm, and neither does JavaScrip
 // console.log(scores[5+1]);
 // console.log(scores[idx2>idx ? 1 : 0]); // index value is 0 thus returns 14
 
+// let obj = {
+//     q1: 55,
+//     q2: 85,
+//     q3: 90,
+//     q4: 0
+// };
+
+// let objKeys = Object.keys(obj);
+// let objValues = Object.values(obj);
+// let objEntries = Object.entries(obj);
+
+// console.log(objKeys);
+// console.log(objValues);
+// console.log(objEntries);
+// console.log(objEntries[1][1]); // returns 85 as that's the value of the entry with index number 1 in the objEntries array
+
+
+// const isArrayLike = function(el) {
+//     if (el[Symbol.iterator]) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+const isArrayLike = el => el != null && typeof el[Symbol.iterator] === 'function';
+
+let domDiv = document.querySelectorAll('div');
+
 let obj = {
-    q1: 55,
-    q2: 85,
-    q3: 90,
-    q4: 0
+    1: 'one',
+    2: 'two',
+    3: 'three'
 };
 
-let objKeys = Object.keys(obj);
-let objValues = Object.values(obj);
-let objEntries = Object.entries(obj);
+let str = "string";
 
-console.log(objKeys);
-console.log(objValues);
-console.log(objEntries);
-console.log(objEntries[1][1]); // returns 85 as that's the value of the entry with index number 1 in the objEntries array
+// for (const val of domDiv) {
+//     console.log(val);
+// }
