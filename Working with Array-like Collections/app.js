@@ -111,18 +111,26 @@ let str = "Natural language has no dominant paradigm, and neither does JavaScrip
 // }
 // console.log(str3);
 
-let wordArray = str.split(" ", 10);
-let comaArray = str.split(",");
-let hyphenArray = str.split("-");
-let regexArray = str.split(/[,.]|--/);
-let str2 = "";
-for (const char of regexArray) {
-    str2 += char;
-}
+// let wordArray = str.split(" ", 10);
+// let comaArray = str.split(",");
+// let hyphenArray = str.split("-");
+// let regexArray = str.split(/[,.]|--/);
+// let str2 = "";
+// for (const char of regexArray) {
+//     str2 += char;
+// }
 
-console.log(str);
-console.log(wordArray);
-console.log(comaArray);
-console.log(hyphenArray);
-console.log(regexArray);
-console.log(str2);
+// console.log(str);
+// console.log(wordArray);
+// console.log(comaArray);
+// console.log(hyphenArray);
+// console.log(regexArray);
+// console.log(str2);
+
+let sumIt = function(...argumentsArr) {
+    //let argumentsArr = Array.from(arguments);
+    console.log(argumentsArr);
+    console.log(Array.isArray(argumentsArr));
+};
+
+sumIt(1,2,3,4,5,6);
