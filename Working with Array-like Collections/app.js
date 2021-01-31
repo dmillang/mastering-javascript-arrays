@@ -127,10 +127,20 @@ let str = "Natural language has no dominant paradigm, and neither does JavaScrip
 // console.log(regexArray);
 // console.log(str2);
 
-let sumIt = function(...argumentsArr) {
-    //let argumentsArr = Array.from(arguments);
-    console.log(argumentsArr);
-    console.log(Array.isArray(argumentsArr));
-};
+// let sumIt = function(...argumentsArr) {
+//     //let argumentsArr = Array.from(arguments);
+//     console.log(argumentsArr);
+//     console.log(Array.isArray(argumentsArr));
+// };
+// sumIt(1,2,3,4,5,6);
 
-sumIt(1,2,3,4,5,6);
+let scores = [14,34,56,72,83,98,103];
+
+let idx = 5;
+let idx2 = 3;
+
+console.log(scores);
+console.log(scores[idx]);
+console.log(scores[idx+1]);
+console.log(scores[5+1]);
+console.log(scores[idx2>idx ? 1 : 0]); // index value is 0 thus returns 14
