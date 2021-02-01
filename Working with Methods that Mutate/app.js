@@ -90,19 +90,32 @@
 // console.log(arrSortedArrow);
 
 
-let arr = [1,2,3,4,5,6];
-let arr2 = ["four","five","six"];
+// let arr = [1,2,3,4,5,6];
+// let arr2 = ["four","five","six"];
+
+// console.log(arr);
+
+// let returnArray1 = [...arr].splice(2,2);
+// let returnArray2 = [...arr].splice(4);
+// let returnArray3 = arr.splice(3,3,...arr2);
+// let returnArray4 = arr.splice(0,1,"a","b"); // add two return 1
+
+
+// console.log(returnArray1); // returns [3,4];
+// console.log(returnArray2); // returns [5,6];
+// console.log(returnArray3); // returns [4,5];
+// console.log(returnArray4); // returns [4,5];
+// console.log(arr); // returns [1, 2, 3, "four", "five", 6]
+
+let arr = [1,2,3,4,5,6,7,8];
+
+// arr.copyWithin(2,0,2); // returns [1,2,1,2,5,6,7,8]
+
+// arr.copyWithin(1,2,3); // returns [1,3,3,4,5,6,7,8]
+
+// arr.copyWithin(2,0) // returns [1,2,1,2,3,4,5,6]
+
+arr.copyWithin(3,-1); // returns [1,2,3,8,5,6,7,8]
+arr.copyWithin(0,5,6); // returns [6,2,3,8,5,6,7,8]
 
 console.log(arr);
-
-let returnArray1 = [...arr].splice(2,2);
-let returnArray2 = [...arr].splice(4);
-let returnArray3 = arr.splice(3,3,...arr2);
-let returnArray4 = arr.splice(0,1,"a","b"); // add two return 1
-
-
-console.log(returnArray1); // returns [3,4];
-console.log(returnArray2); // returns [5,6];
-console.log(returnArray3); // returns [4,5];
-console.log(returnArray4); // returns [4,5];
-console.log(arr); // returns [1, 2, 3, "four", "five", 6]
