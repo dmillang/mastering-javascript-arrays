@@ -58,33 +58,51 @@
 // console.log(arrStrSortedCompared);
 
 
-let arr = [{
-  firstName: "Steven",
-  lastName: "Hancock",
-  score: 90
-},{
-  firstName: "Lynette",
-  lastName: "Jorgensen",
-  score: 100
-},{
-  firstName: "Andrew",
-  lastName: "Wilson",
-  score: 71
-},{
-  firstName: "Annika",
-  lastName: "Turner",
-  score: 82
-}];
+// let arr = [{
+//   firstName: "Steven",
+//   lastName: "Hancock",
+//   score: 90
+// },{
+//   firstName: "Lynette",
+//   lastName: "Jorgensen",
+//   score: 100
+// },{
+//   firstName: "Andrew",
+//   lastName: "Wilson",
+//   score: 71
+// },{
+//   firstName: "Annika",
+//   lastName: "Turner",
+//   score: 82
+// }];
 
-// sort by higher score
-let arrSorted = [...arr].slice().sort(function(a,b) {
-  if (a.score < b.score) return 1;
-  if (a.score > b.score) return -1;
-  return 0;
-})
+// // sort by higher score
+// let arrSorted = [...arr].slice().sort(function(a,b) {
+//   if (a.score < b.score) return 1;
+//   if (a.score > b.score) return -1;
+//   return 0;
+// })
 
-let arrSortedArrow = [...arr].slice().sort((a,b) => (a.score < b.score) ? 1 : (a.score > b.score) ? -1 : 0)
+// let arrSortedArrow = [...arr].slice().sort((a,b) => (a.score < b.score) ? 1 : (a.score > b.score) ? -1 : 0)
+
+// console.log(arr);
+// console.log(arrSorted);
+// console.log(arrSortedArrow);
+
+
+let arr = [1,2,3,4,5,6];
+let arr2 = ["four","five","six"];
 
 console.log(arr);
-console.log(arrSorted);
-console.log(arrSortedArrow);
+
+let returnArray1 = [...arr].splice(2,2);
+let returnArray2 = [...arr].splice(4);
+let returnArray3 = arr.splice(3,3,...arr2);
+let returnArray4 = arr.splice(0,1,"a","b"); // add two return 1
+
+
+console.log(returnArray1); // returns [3,4];
+console.log(returnArray2); // returns [5,6];
+console.log(returnArray3); // returns [4,5];
+console.log(returnArray4); // returns [4,5];
+console.log(arr); // returns [1, 2, 3, "four", "five", 6]
