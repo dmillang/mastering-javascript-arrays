@@ -125,11 +125,9 @@ let arr = ["Steven","Mary","Simone","Ari","McKay","James"];
 // let arr2 = arr; // just creates a new reference to the same array
 // arr2.sort();
 
-let arrSort = [...arr];
-arrSort.sort();
+let arrSort = [...arr].sort().toString();
 
-let arrReverse = Array.from(arr);
-arrReverse.reverse();
+let arrReverse = Array.from(arr).reverse().toString();
 
 console.log(arr);
 console.log(arrSort);
