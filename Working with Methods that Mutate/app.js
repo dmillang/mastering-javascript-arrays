@@ -107,15 +107,30 @@
 // console.log(returnArray4); // returns [4,5];
 // console.log(arr); // returns [1, 2, 3, "four", "five", 6]
 
-let arr = [1,2,3,4,5,6,7,8];
+// let arr = [1,2,3,4,5,6,7,8];
 
-// arr.copyWithin(2,0,2); // returns [1,2,1,2,5,6,7,8]
+// // arr.copyWithin(2,0,2); // returns [1,2,1,2,5,6,7,8]
 
-// arr.copyWithin(1,2,3); // returns [1,3,3,4,5,6,7,8]
+// // arr.copyWithin(1,2,3); // returns [1,3,3,4,5,6,7,8]
 
-// arr.copyWithin(2,0) // returns [1,2,1,2,3,4,5,6]
+// // arr.copyWithin(2,0) // returns [1,2,1,2,3,4,5,6]
 
-arr.copyWithin(3,-1); // returns [1,2,3,8,5,6,7,8]
-arr.copyWithin(0,5,6); // returns [6,2,3,8,5,6,7,8]
+// arr.copyWithin(3,-1); // returns [1,2,3,8,5,6,7,8]
+// arr.copyWithin(0,5,6); // returns [6,2,3,8,5,6,7,8]
+
+// console.log(arr);
+
+let arr = ["Steven","Mary","Simone","Ari","McKay","James"];
+
+// let arr2 = arr; // just creates a new reference to the same array
+// arr2.sort();
+
+let arrSort = [...arr];
+arrSort.sort();
+
+let arrReverse = Array.from(arr);
+arrReverse.reverse();
 
 console.log(arr);
+console.log(arrSort);
+console.log(arrReverse);
