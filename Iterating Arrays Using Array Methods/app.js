@@ -47,9 +47,17 @@
 //     }
 // });
 
-// console.log(objArr);
+// let passArr = objArr.filter((val) => {
+//     if (val.pass === true) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// });
 
-let arr = [3, 15, 25, 6, 8, 12];
+// console.log(passArr);
+
+// let arr = [3, 15, 25, 6, 8, 12];
 
 // let newArr = arr.map((val, idx, theArray) => {
 //     console.log(val, idx, theArray);
@@ -57,10 +65,24 @@ let arr = [3, 15, 25, 6, 8, 12];
 // });
 // console.log(newArr);
 
-let objArr = arr.map((val, idx, theArray) => {
-    console.log(val, idx, theArray);
-    return {val};
+// let objArr = arr.map((val, idx, theArray) => {
+//     console.log(val, idx, theArray);
+//     return {val};
+// });
+// console.log(objArr);
+
+// console.log(arr);
+
+let scores = [80, 50, 0, 100, 90, 80, 75];
+
+let passScores = scores.filter((val) => {
+    return val >= 70;
 });
 
-console.log(arr);
-console.log(objArr);
+let failScores = scores.filter((val) => {
+    return val < 70;
+});
+
+console.log(scores);
+console.log(passScores);
+console.log(failScores);
