@@ -73,16 +73,32 @@
 
 // console.log(arr);
 
+// let scores = [80, 50, 0, 100, 90, 80, 75];
+
+// let passScores = scores.filter((val) => {
+//     return val >= 70;
+// });
+
+// let failScores = scores.filter((val) => {
+//     return val < 70;
+// });
+
+// console.log(scores);
+// console.log(passScores);
+// console.log(failScores);
+
 let scores = [80, 50, 0, 100, 90, 80, 75];
 
-let passScores = scores.filter((val) => {
-    return val >= 70;
-});
+let sum = scores.reduce((acc, val) => {
+  return acc + val;
+}, 0);
 
-let failScores = scores.filter((val) => {
-    return val < 70;
-});
+console.log(sum);
 
-console.log(scores);
-console.log(passScores);
-console.log(failScores);
+let objs = [{ firstName: "Steven" }, { lastName: "Hancock" }, { score: 85 }];
+
+let combinedObjs = objs.reduce((acc,val)=>{
+    return Object.assign(acc,val);
+},{});
+
+console.log(combinedObjs);
