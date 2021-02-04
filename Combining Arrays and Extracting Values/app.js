@@ -58,3 +58,7 @@ let strArraySplit = strArray.flatMap(val => val.split(" ")).join(" ");
 
 console.log(strArray);
 console.log(strArraySplit);
+
+let arr = [1,2,3];
+let arrStr = arr.toString();
+console.log(arrStr);
