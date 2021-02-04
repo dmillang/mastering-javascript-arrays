@@ -110,6 +110,6 @@
 // console.log(array1.every(isBelowThreshold));
 // // expected output: true
 
-let str = "the answer is 1956.";
-let splitStr = str.replace("."," ").split(" ").some((val) => val === "1956");
-console.log(splitStr);
+// let str = "the answer is 1956.";
+// let splitStr = str.replace("."," ").split(" ").some((val) => val === "1956");
+// console.log(splitStr);
