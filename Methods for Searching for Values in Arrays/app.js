@@ -46,3 +46,9 @@ let both = users.find((val) => {
 });
 
 console.log(both);
+
+let bothIdx = users.findIndex((val) => {
+  return val.q1 === 100 && val.q2 === 100;
+});
+
+console.log(bothIdx);
