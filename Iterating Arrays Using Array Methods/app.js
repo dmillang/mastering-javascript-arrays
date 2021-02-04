@@ -113,3 +113,15 @@
 // let str = "the answer is 1956.";
 // let splitStr = str.replace("."," ").split(" ").some((val) => val === "1956");
 // console.log(splitStr);
+
+let nums = new Set([1,2,"3",4,"5"]);
+
+let numsArray = Array.from(nums, function (val) {
+  if (typeof val === 'string') {
+    return Number(val);
+  } else {
+    return val;
+  }
+});
+
+console.log(numsArray); 
