@@ -102,16 +102,14 @@
 // },{});
 
 // console.log(combinedObjs);
-
 // let scores = [80, 50, 0, 100, 90, 80, 75];
-
 // let results = scores.every((val) => val > 0); // returns one value of true or false (in this case false bc there's an element that is equal or less than zero)
-
 // console.log(results);
+// const isBelowThreshold = (currentValue) => currentValue < 40;
+// const array1 = [1, 30, 39, 29, 10, 13];
+// console.log(array1.every(isBelowThreshold));
+// // expected output: true
 
-const isBelowThreshold = (currentValue) => currentValue < 40;
-
-const array1 = [1, 30, 39, 29, 10, 13];
-
-console.log(array1.every(isBelowThreshold));
-// expected output: true
+let str = "the answer is 1956.";
+let splitStr = str.replace("."," ").split(" ").some((val) => val === "1956");
+console.log(splitStr);
