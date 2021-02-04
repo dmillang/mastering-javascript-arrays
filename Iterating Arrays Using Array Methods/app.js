@@ -87,18 +87,31 @@
 // console.log(passScores);
 // console.log(failScores);
 
-let scores = [80, 50, 0, 100, 90, 80, 75];
+// let scores = [80, 50, 0, 100, 90, 80, 75];
 
-let sum = scores.reduce((acc, val) => {
-  return acc + val;
-}, 0);
+// let sum = scores.reduce((acc, val) => {
+//   return acc + val;
+// }, 0);
 
-console.log(sum);
+// console.log(sum);
 
-let objs = [{ firstName: "Steven" }, { lastName: "Hancock" }, { score: 85 }];
+// let objs = [{ firstName: "Steven" }, { lastName: "Hancock" }, { score: 85 }];
 
-let combinedObjs = objs.reduce((acc,val)=>{
-    return Object.assign(acc,val);
-},{});
+// let combinedObjs = objs.reduce((acc,val)=>{
+//     return Object.assign(acc,val);
+// },{});
 
-console.log(combinedObjs);
+// console.log(combinedObjs);
+
+// let scores = [80, 50, 0, 100, 90, 80, 75];
+
+// let results = scores.every((val) => val > 0); // returns one value of true or false (in this case false bc there's an element that is equal or less than zero)
+
+// console.log(results);
+
+const isBelowThreshold = (currentValue) => currentValue < 40;
+
+const array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+// expected output: true
